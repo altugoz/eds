@@ -1,4 +1,5 @@
-import { fetchPlaceholders } from '../../scripts/placeholders.js';
+// eslint-disable-next-line import/no-unresolved
+import { fetchPlaceholders } from '../placeholders.js';
 
 
 function updateActiveSlide(slide) {
