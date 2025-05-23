@@ -1,7 +1,6 @@
 // eslint-disable-next-line import/no-unresolved
 import { fetchPlaceholders } from '../placeholders.js';
 
-
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel');
   const slideIndex = parseInt(slide.dataset.slideIndex, 10);
