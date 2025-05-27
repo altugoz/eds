@@ -1,11 +1,22 @@
-import { loadBlock } from '../../scripts/aem.js';
-import { decorateMain } from '../../scripts/scripts.js';
+# import { loadBlocks } from '../../scripts/aem.js';
+# import { decorateMain } from '../../scripts/aem.js';
+
+import {
+  loadBlock,          // loads ONE block
+  loadSection,        // loads ALL blocks inside a section – use this if you need the old plural behaviour
+  /* any other helpers you really use, e.g. */
+  decorateButtons,
+  decorateIcons,
+  decorateBlocks,
+  decorateSections,
+} from '../../scripts/aem.js';
+
 
 async function generateTabMainBlock(html) {
   const main = document.createElement('main');
   main.innerHTML = html;
   decorateMain(main);
-  await loadBlock(main);
+  await loadBlocks(main);
   return main;
 }
 
