@@ -1,5 +1,5 @@
 import { loadBlocks } from '../../scripts/aem.js';
-import { decorateMain } from '../../scripts/scripts.js';
+import { decorateMain } from '../../scripts/aem.js';
 
 async function generateTabMainBlock(html) {
   const main = document.createElement('main');
