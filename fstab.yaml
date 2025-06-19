@@ -1,2 +1,5 @@
 mountpoints:
   /: https://drive.google.com/drive/u/0/folders/1bh4Ej0IP-YMQ5amjIeRTIqxsXxHzifTH
+  /:
+    url: https://content.da.live/altugoz/eds/
+    type: markup
